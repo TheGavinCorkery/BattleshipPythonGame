@@ -36,7 +36,7 @@ class Board:
         for x in range(1, 4):
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
-            self.player_board[ship_row - 1][ship_col - 1] = 'x'
+            self.player_board[ship_row][ship_col] = 'x'
         self.print_board()
 
     def place_battleships(self):
@@ -44,7 +44,7 @@ class Board:
         for x in range(1, 5):
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
-            self.player_board[ship_row - 1][ship_col - 1] = 'x'
+            self.player_board[ship_row][ship_col] = 'x'
         self.print_board()
 
     def place_aircraft_carrier(self):
@@ -52,7 +52,7 @@ class Board:
         for x in range(1, 6):
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
-            self.player_board[ship_row - 1][ship_col - 1] = 'x'
+            self.player_board[ship_row][ship_col] = 'x'
         self.print_board()
 
 

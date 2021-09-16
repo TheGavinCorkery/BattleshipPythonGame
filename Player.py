@@ -5,6 +5,7 @@ class Player():
         self.my_board = Board()
         self.guess_board = Board()
         self.opponent_board = []
+        self.hits = 0
 
     #Control all methods to guess a spot on opponents board
     def guess_spot(self):
@@ -15,8 +16,9 @@ class Player():
         
 
     def space_hit_or_miss(self,guess_space):
-        if self.opponent_board.player_board[guess_space[0]][guess_space[1]] == 'x':
+        if self.opponent_board.player_board[guess_space[1]][guess_space[0]] == 'x':
             print ("Congrats, you sunk my battleship")
+            self.hits += 1
             return True
         else:
             print('You missed!')
