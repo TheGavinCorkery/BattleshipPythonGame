@@ -29,7 +29,6 @@ class Board:
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
             self.player_board[ship_row][ship_col] = 'x'
-        self.print_board()
 
     def place_submarine(self):
         print('Placing submarine, you must choose three places that touch each other to place the ship')
@@ -37,7 +36,6 @@ class Board:
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
             self.player_board[ship_row][ship_col] = 'x'
-        self.print_board()
 
     def place_battleships(self):
         print('Placing battleship, you must choose four places that touch each other to place the ship')
@@ -45,7 +43,6 @@ class Board:
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
             self.player_board[ship_row][ship_col] = 'x'
-        self.print_board()
 
     def place_aircraft_carrier(self):
         print('Placing aircraft carrier, you must choose five places that touch each other to place the ship')
@@ -53,6 +50,5 @@ class Board:
             ship_col = int(input(f'Which column out of 20 do you want to place the {x} part of ship?'))
             ship_row = int(input(f'Which row out of 20 do you want to place the {x} part of ship?'))
             self.player_board[ship_row][ship_col] = 'x'
-        self.print_board()
 
 
