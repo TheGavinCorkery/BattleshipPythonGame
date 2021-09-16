@@ -10,11 +10,15 @@ class Player():
     #Control all methods to guess a spot on opponents board
     def guess_spot(self):
         print('Here is your current guessing board')
-        print(self.guess_board.player_board)
+        self.print_guess_board()
         guess_space = self.get_guess_space()
         #Update guess board with a hit or a miss
         hit_or_miss = self.space_hit_or_miss(guess_space)
         self.update_guess_board(guess_space, hit_or_miss)
+
+    def print_guess_board(self):
+        for row in self.guess_board.player_board:
+            print(' '.join(row))
         
 
     def space_hit_or_miss(self,guess_space):

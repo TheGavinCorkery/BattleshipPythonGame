@@ -41,8 +41,10 @@ class Game:
         player_two.opponent_board = player_one.my_board
 
     def run_round(self):
+        print('\n------------------------------')
         print('Player One, guess a spot to hit!')
         self.players[0].guess_spot()
+        print('\n------------------------------')
         print('Player Two, guess a spot to hit!')
         self.players[1].guess_spot()
         self.check_win()

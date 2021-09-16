@@ -17,6 +17,7 @@ class Board:
         for row in self.player_board:
             print(' '.join(row))
 
+
     def place_ships(self):
         self.place_destroyer()
         self.place_submarine()
