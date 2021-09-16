@@ -50,10 +50,10 @@ class Game:
         self.check_win()
 
     def check_win(self):
-        if self.players[0].hits == 15:
+        if self.players[0].hits == 14:
             print('Congrats! Player One Wins!')
             self.is_winner == True
-        elif self.players[1].hits == 15:
+        elif self.players[1].hits == 14:
             print('Congrats! Player Two Wins!')
             self.is_winner == True
     
